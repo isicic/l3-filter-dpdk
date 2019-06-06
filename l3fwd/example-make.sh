@@ -1,0 +1,4 @@
+#!bin/bash
+
+export RTE_SDK=/home/ivans/sources/dpdk-stable-17.11.1/
+sudo -E make EXPECTED_KEYS=1000000 LOOKUP_METHOD=1 KEY_SIZE=8 COUNT_CYCLES=0 EM_HASH_LOOKUP_COUNT=16 COUNT_BULK=0
